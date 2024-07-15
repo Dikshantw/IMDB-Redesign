@@ -8,15 +8,15 @@ import HamburgerMenu from "../assets/Compact, Mode=Dark.svg";
 
 const Menu = () => {
   return (
-    <nav className="flex h-[73px] bg-Bgnav gap-7 justify-center items-center">
-      <div className="flex justify-between items-center w-full max-w-screen-2xl">
+    <nav className="flex flex-grow h-[73px] bg-Bgnav justify-center items-center">
+      <div className="flex justify-between items-center gap-7 w-full max-w-screen-xl">
         <div className="flex gap-2 mx-3">
-          <button className="lg:hidden">
+          <button className="xl:hidden">
             <img src={HamburgerMenu} alt="Menu" />
           </button>
           <img src={IMDB_Logo} alt="IMDB_logo" />
         </div>
-        <div className="hidden lg:flex text-Tprimary">
+        <div className="hidden xl:flex text-Tprimary">
           <button className="px-[10px] py-2">Movies</button>
           <button className="px-[10px] py-2 whitespace-nowrap">TV Shows</button>
           <button className="px-[10px] py-2">Celebs</button>
@@ -39,7 +39,7 @@ const Menu = () => {
             <img src={SearchIcon} alt="" />
           </div>
         </div>
-        <div className="hidden lg:flex gap-1 text-Tprimary">
+        <div className="hidden xl:flex gap-1 text-Tprimary">
           <img src={Bookmark} alt="bookmark" />
           <span>Watchlist</span>
         </div>
@@ -51,11 +51,11 @@ const Menu = () => {
             <span>User</span>
           </div>
         </div>
-        <div className="hidden lg:flex gap-1 text-Tprimary">
+        <div className="hidden xl:flex gap-1 text-Tprimary">
           <span>EN</span>
           <img src={ChevronDown} alt="down" />
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <img src={Sun} alt="dark_mode" />
         </div>
       </div>
